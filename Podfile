@@ -9,5 +9,6 @@ target 'Design engineering' do
   
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RxGesture'
 
 end

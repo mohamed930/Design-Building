@@ -22,6 +22,7 @@
 		04F396A72819A33E00F0A8A8 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04F3969F2819A33E00F0A8A8 /* OFL.txt */; };
 		04F396A82819A33E00F0A8A8 /* Tajawal-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04F396A02819A33E00F0A8A8 /* Tajawal-Black.ttf */; };
 		AFC3D314C8965C2856D07265 /* Pods_Design_engineering.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F86587724AA02A3EC27A966A /* Pods_Design_engineering.framework */; };
+		D3069D40281A7A3000004E63 /* chooceCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3069D3F281A7A3000004E63 /* chooceCategoryViewModel.swift */; };
 		D3A20EC32819CE6100C9F816 /* Utilites.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A20EC22819CE6100C9F816 /* Utilites.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		04F396A02819A33E00F0A8A8 /* Tajawal-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Black.ttf"; sourceTree = "<group>"; };
 		1C083691623EEBD6704B9D78 /* Pods-Design engineering.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Design engineering.release.xcconfig"; path = "Target Support Files/Pods-Design engineering/Pods-Design engineering.release.xcconfig"; sourceTree = "<group>"; };
 		BAB78C622464B15E3D8A7047 /* Pods-Design engineering.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Design engineering.debug.xcconfig"; path = "Target Support Files/Pods-Design engineering/Pods-Design engineering.debug.xcconfig"; sourceTree = "<group>"; };
+		D3069D3F281A7A3000004E63 /* chooceCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chooceCategoryViewModel.swift; sourceTree = "<group>"; };
 		D3A20EC22819CE6100C9F816 /* Utilites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilites.swift; sourceTree = "<group>"; };
 		F86587724AA02A3EC27A966A /* Pods_Design_engineering.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Design_engineering.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -126,6 +128,7 @@
 		04F396952819872E00F0A8A8 /* chooce type ViewModel + ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				D3069D3F281A7A3000004E63 /* chooceCategoryViewModel.swift */,
 				04F39681281986CF00F0A8A8 /* chooceCatagoryViewController.swift */,
 			);
 			path = "chooce type ViewModel + ViewController";
@@ -315,6 +318,7 @@
 			files = (
 				D3A20EC32819CE6100C9F816 /* Utilites.swift in Sources */,
 				04F39682281986CF00F0A8A8 /* chooceCatagoryViewController.swift in Sources */,
+				D3069D40281A7A3000004E63 /* chooceCategoryViewModel.swift in Sources */,
 				04F3967E281986CF00F0A8A8 /* AppDelegate.swift in Sources */,
 				04F39680281986CF00F0A8A8 /* SceneDelegate.swift in Sources */,
 			);
