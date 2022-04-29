@@ -21,6 +21,7 @@
 		04F396A62819A33E00F0A8A8 /* Tajawal-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04F3969E2819A33E00F0A8A8 /* Tajawal-Medium.ttf */; };
 		04F396A72819A33E00F0A8A8 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04F3969F2819A33E00F0A8A8 /* OFL.txt */; };
 		04F396A82819A33E00F0A8A8 /* Tajawal-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04F396A02819A33E00F0A8A8 /* Tajawal-Black.ttf */; };
+		04F89451281C15C7009BC97F /* color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F89450281C15C7009BC97F /* color.swift */; };
 		AFC3D314C8965C2856D07265 /* Pods_Design_engineering.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F86587724AA02A3EC27A966A /* Pods_Design_engineering.framework */; };
 		D3069D40281A7A3000004E63 /* chooceCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3069D3F281A7A3000004E63 /* chooceCategoryViewModel.swift */; };
 		D3A20EC32819CE6100C9F816 /* Utilites.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A20EC22819CE6100C9F816 /* Utilites.swift */; };
@@ -43,6 +44,7 @@
 		04F3969E2819A33E00F0A8A8 /* Tajawal-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Medium.ttf"; sourceTree = "<group>"; };
 		04F3969F2819A33E00F0A8A8 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		04F396A02819A33E00F0A8A8 /* Tajawal-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Black.ttf"; sourceTree = "<group>"; };
+		04F89450281C15C7009BC97F /* color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = color.swift; sourceTree = "<group>"; };
 		1C083691623EEBD6704B9D78 /* Pods-Design engineering.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Design engineering.release.xcconfig"; path = "Target Support Files/Pods-Design engineering/Pods-Design engineering.release.xcconfig"; sourceTree = "<group>"; };
 		BAB78C622464B15E3D8A7047 /* Pods-Design engineering.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Design engineering.debug.xcconfig"; path = "Target Support Files/Pods-Design engineering/Pods-Design engineering.debug.xcconfig"; sourceTree = "<group>"; };
 		D3069D3F281A7A3000004E63 /* chooceCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chooceCategoryViewModel.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				D3A20EC22819CE6100C9F816 /* Utilites.swift */,
+				04F89450281C15C7009BC97F /* color.swift */,
 			);
 			path = "Extensions + cusotmise";
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				D3A20EC32819CE6100C9F816 /* Utilites.swift in Sources */,
 				04F39682281986CF00F0A8A8 /* chooceCatagoryViewController.swift in Sources */,
 				D3069D40281A7A3000004E63 /* chooceCategoryViewModel.swift in Sources */,
+				04F89451281C15C7009BC97F /* color.swift in Sources */,
 				04F3967E281986CF00F0A8A8 /* AppDelegate.swift in Sources */,
 				04F39680281986CF00F0A8A8 /* SceneDelegate.swift in Sources */,
 			);

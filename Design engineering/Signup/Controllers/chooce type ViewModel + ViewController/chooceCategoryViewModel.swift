@@ -29,7 +29,9 @@ class chooceCategoryViewModel {
     
     // MARK: TODO: This Method For adding tab Geuester to the view.
     func AddGuester (view: UIView, completion: @escaping (Bool) -> ()) {
-        
+        view.rx.tapGesture().when(.recognized).subscribe(onNext: { _ in
+            completion(true)
+        }).disposed(by: disposebag)
     }
     // -------------------------------------------
 }
