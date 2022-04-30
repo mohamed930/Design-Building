@@ -47,7 +47,7 @@ class SignupTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+
         ConfigureTextFieldUI()
         LoadData()
         BindToTextField()
@@ -64,7 +64,7 @@ class SignupTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return section == 0 ? 0 : 32
+        return section == 0 ? 0 : 70
     }
     
     @IBAction func ShowPassword (_ sender: UIButton) {
@@ -233,6 +233,8 @@ class SignupTableViewController: UITableViewController {
             }
             .disposed(by: disposebag)
     }
+    
+    
     
     private func ChangeStatus(_ sender: UIButton, _ text: UITextField?) {
         
