@@ -24,7 +24,14 @@
 		04F89451281C15C7009BC97F /* color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F89450281C15C7009BC97F /* color.swift */; };
 		AFC3D314C8965C2856D07265 /* Pods_Design_engineering.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F86587724AA02A3EC27A966A /* Pods_Design_engineering.framework */; };
 		D3069D40281A7A3000004E63 /* chooceCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3069D3F281A7A3000004E63 /* chooceCategoryViewModel.swift */; };
+		D3299F7C281C9C020015A4C4 /* FieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3299F7A281C9C020015A4C4 /* FieldCell.swift */; };
+		D3299F7D281C9C020015A4C4 /* FieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3299F7B281C9C020015A4C4 /* FieldCell.xib */; };
+		D3299F7F281C9E8D0015A4C4 /* FieldsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3299F7E281C9E8D0015A4C4 /* FieldsModel.swift */; };
+		D347EAEB281C614200E9E7E7 /* SignupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D347EAEA281C614200E9E7E7 /* SignupTableViewController.swift */; };
+		D347EAEE281C61B700E9E7E7 /* SingupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D347EAED281C61B700E9E7E7 /* SingupModel.swift */; };
+		D3950423281C7DE7000BF315 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3950422281C7DE7000BF315 /* SignupViewModel.swift */; };
 		D3A20EC32819CE6100C9F816 /* Utilites.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A20EC22819CE6100C9F816 /* Utilites.swift */; };
+		D3E318BF281C674800501574 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E318BE281C674800501574 /* UITextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +55,14 @@
 		1C083691623EEBD6704B9D78 /* Pods-Design engineering.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Design engineering.release.xcconfig"; path = "Target Support Files/Pods-Design engineering/Pods-Design engineering.release.xcconfig"; sourceTree = "<group>"; };
 		BAB78C622464B15E3D8A7047 /* Pods-Design engineering.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Design engineering.debug.xcconfig"; path = "Target Support Files/Pods-Design engineering/Pods-Design engineering.debug.xcconfig"; sourceTree = "<group>"; };
 		D3069D3F281A7A3000004E63 /* chooceCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chooceCategoryViewModel.swift; sourceTree = "<group>"; };
+		D3299F7A281C9C020015A4C4 /* FieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldCell.swift; sourceTree = "<group>"; };
+		D3299F7B281C9C020015A4C4 /* FieldCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FieldCell.xib; sourceTree = "<group>"; };
+		D3299F7E281C9E8D0015A4C4 /* FieldsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldsModel.swift; sourceTree = "<group>"; };
+		D347EAEA281C614200E9E7E7 /* SignupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTableViewController.swift; sourceTree = "<group>"; };
+		D347EAED281C61B700E9E7E7 /* SingupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingupModel.swift; sourceTree = "<group>"; };
+		D3950422281C7DE7000BF315 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		D3A20EC22819CE6100C9F816 /* Utilites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilites.swift; sourceTree = "<group>"; };
+		D3E318BE281C674800501574 /* UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		F86587724AA02A3EC27A966A /* Pods_Design_engineering.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Design_engineering.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -87,6 +101,7 @@
 			children = (
 				04F39691281986FF00F0A8A8 /* App delegate */,
 				04F396962819876B00F0A8A8 /* launch screen */,
+				D347EAEC281C61A500E9E7E7 /* Models */,
 				04F396922819870E00F0A8A8 /* Signup */,
 				04F396972819877900F0A8A8 /* Assists */,
 			);
@@ -123,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				04F396952819872E00F0A8A8 /* chooce type ViewModel + ViewController */,
+				D347EAE9281C611C00E9E7E7 /* Signup ViewModel + ViewController */,
+				D3299F78281C9BCC0015A4C4 /* Cell */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -187,9 +204,45 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D3299F78281C9BCC0015A4C4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D3299F79281C9BDA0015A4C4 /* FieldCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D3299F79281C9BDA0015A4C4 /* FieldCell */ = {
+			isa = PBXGroup;
+			children = (
+				D3299F7A281C9C020015A4C4 /* FieldCell.swift */,
+				D3299F7B281C9C020015A4C4 /* FieldCell.xib */,
+			);
+			path = FieldCell;
+			sourceTree = "<group>";
+		};
+		D347EAE9281C611C00E9E7E7 /* Signup ViewModel + ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D347EAEA281C614200E9E7E7 /* SignupTableViewController.swift */,
+				D3950422281C7DE7000BF315 /* SignupViewModel.swift */,
+			);
+			path = "Signup ViewModel + ViewController";
+			sourceTree = "<group>";
+		};
+		D347EAEC281C61A500E9E7E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D347EAED281C61B700E9E7E7 /* SingupModel.swift */,
+				D3299F7E281C9E8D0015A4C4 /* FieldsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D3A20EC12819CE4500C9F816 /* Extensions + cusotmise */ = {
 			isa = PBXGroup;
 			children = (
+				D3E318BE281C674800501574 /* UITextField.swift */,
 				D3A20EC22819CE6100C9F816 /* Utilites.swift */,
 				04F89450281C15C7009BC97F /* color.swift */,
 			);
@@ -266,6 +319,7 @@
 				04F39685281986CF00F0A8A8 /* SignupView.storyboard in Resources */,
 				04F396A32819A33E00F0A8A8 /* Tajawal-Bold.ttf in Resources */,
 				04F396A42819A33E00F0A8A8 /* Tajawal-ExtraLight.ttf in Resources */,
+				D3299F7D281C9C020015A4C4 /* FieldCell.xib in Resources */,
 				04F396A12819A33E00F0A8A8 /* Tajawal-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,9 +373,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D347EAEB281C614200E9E7E7 /* SignupTableViewController.swift in Sources */,
 				D3A20EC32819CE6100C9F816 /* Utilites.swift in Sources */,
+				D3E318BF281C674800501574 /* UITextField.swift in Sources */,
 				04F39682281986CF00F0A8A8 /* chooceCatagoryViewController.swift in Sources */,
+				D3299F7C281C9C020015A4C4 /* FieldCell.swift in Sources */,
+				D347EAEE281C61B700E9E7E7 /* SingupModel.swift in Sources */,
 				D3069D40281A7A3000004E63 /* chooceCategoryViewModel.swift in Sources */,
+				D3950423281C7DE7000BF315 /* SignupViewModel.swift in Sources */,
+				D3299F7F281C9E8D0015A4C4 /* FieldsModel.swift in Sources */,
 				04F89451281C15C7009BC97F /* color.swift in Sources */,
 				04F3967E281986CF00F0A8A8 /* AppDelegate.swift in Sources */,
 				04F39680281986CF00F0A8A8 /* SceneDelegate.swift in Sources */,

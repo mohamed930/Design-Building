@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tajawal-Medium.ttf">
+            <string>Tajawal-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" rowHeight="76" id="KGk-i7-Jjw" customClass="FieldCell" customModule="Design_engineering" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="504" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="504" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسم المجال" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2A-tc-EWT">
+                        <rect key="frame" x="383.5" y="11" width="100.5" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="lLg-dr-Uso"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="20"/>
+                        <color key="textColor" red="0.17254901959999999" green="0.29411764709999999" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkedCell" translatesAutoresizingMaskIntoConstraints="NO" id="DEs-YR-4Q3">
+                        <rect key="frame" x="20" y="11.5" width="50" height="53"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="cyf-ms-vjg"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="O2A-tc-EWT" secondAttribute="bottom" constant="10" id="2Ez-zZ-XHO"/>
+                    <constraint firstItem="DEs-YR-4Q3" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.697368" id="Bef-Hj-R4A"/>
+                    <constraint firstItem="DEs-YR-4Q3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="TbE-bE-S2m"/>
+                    <constraint firstItem="O2A-tc-EWT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="YQS-hN-Eqf"/>
+                    <constraint firstAttribute="trailing" secondItem="O2A-tc-EWT" secondAttribute="trailing" constant="20" symbolic="YES" id="msG-4a-VW8"/>
+                    <constraint firstItem="DEs-YR-4Q3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="pmt-sB-rpO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="CheckedImageView" destination="DEs-YR-4Q3" id="W5F-5m-8kL"/>
+                <outlet property="titleLabel" destination="O2A-tc-EWT" id="SsB-zi-96k"/>
+            </connections>
+            <point key="canvasLocation" x="265.21739130434787" y="103.125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkedCell" width="60" height="60"/>
+    </resources>
+</document>

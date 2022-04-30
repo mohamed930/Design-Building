@@ -41,6 +41,8 @@ class chooceCatagoryViewController: UIViewController {
             guard let self = self else { return }
             if response {
                 self.updateUI(view: self.workerView, label: self.workerLabel)
+                
+                self.MoveToNextPage(signup: SignupModel(jobTitle: "مهندس", jobImage: UIImage(named: "worker")!, fields: [FieldsModel(id: 1, filedTitle: "مدني", checked: false),FieldsModel(id: 2,filedTitle: "معمارى", checked: false),FieldsModel(id: 3,filedTitle: "ديكور", checked: false),FieldsModel(id: 4,filedTitle: "مدني", checked: false)]))
             }
         }
     }
@@ -50,6 +52,8 @@ class chooceCatagoryViewController: UIViewController {
             guard let self = self else { return }
             if response {
                 self.updateUI(view: self.BusinessView, label: self.BusinessLabel)
+                
+                self.MoveToNextPage(signup: SignupModel(jobTitle: "مقاول", jobImage: UIImage(named: "business")!, fields: [FieldsModel(id: 1,filedTitle: "تعليم عالي", checked: false)]))
             }
         }
     }
@@ -59,6 +63,8 @@ class chooceCatagoryViewController: UIViewController {
             guard let self = self else { return }
             if response {
                 self.updateUI(view: self.companyView, label: self.companyLabel)
+                
+                self.MoveToNextPage(signup: SignupModel(jobTitle: "شركة مقاولات", jobImage: UIImage(named: "company")!, fields: [FieldsModel(id: 1,filedTitle: "تعليم عالي", checked: false)]))
             }
         }
     }
@@ -68,6 +74,8 @@ class chooceCatagoryViewController: UIViewController {
             guard let self = self else { return }
             if response {
                 self.updateUI(view: self.adminView, label: self.adminLabel)
+                
+                self.MoveToNextPage(signup: SignupModel(jobTitle: "مشرف", jobImage: UIImage(named: "admin")!, fields: [FieldsModel(id: 1,filedTitle: "تعليم عالي", checked: false)]))
             }
         }
     }
@@ -77,6 +85,8 @@ class chooceCatagoryViewController: UIViewController {
             guard let self = self else { return }
             if response {
                 self.updateUI(view: self.customerView, label: self.customerLabel)
+                
+                self.MoveToNextPage(signup: SignupModel(jobTitle: "عميل", jobImage: UIImage(named: "customer")!, fields: [FieldsModel(id: 1,filedTitle: "تعليم عالي", checked: false)]))
             }
         }
     }
@@ -119,6 +129,14 @@ class chooceCatagoryViewController: UIViewController {
                 $0?.textColor = UIColor().hexStringToUIColor(hex: "#2c4b5f")
             }
         }
+    }
+    
+    
+    private func MoveToNextPage(signup: SignupModel) {
+        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SignupTableViewController") as! SignupTableViewController
+        nextVC.modalPresentationStyle = .fullScreen
+        nextVC.ob = signup
+        self.present(nextVC, animated: true)
     }
 
 }
